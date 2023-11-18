@@ -1,10 +1,18 @@
 package id.infinitelearning.KotlinSubmission.exercise4
 
-fun main() {
 
-}
+
+
     /**
      * Buatlah contoh code penggunaan try catch untuk menangani suatu kasus sesuai keinginan teman-teman
      *
      */
-    // Buat di bawah sini
+    fun main() {
+        val userInput = "10"
+        try {
+            val number = userInput.toInt()
+            println("Input yang valid: $number")
+        } catch (e: NumberFormatException) {
+            println("Input tidak valid, harap masukkan angka yang benar")
+        }
+    }

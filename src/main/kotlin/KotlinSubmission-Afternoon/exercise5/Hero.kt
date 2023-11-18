@@ -24,14 +24,43 @@ class Hero {
 
     private fun checkHealth() {
         if (health <= 0) {
-            println("Anda telah mati $name")
+            println("===Apa yang sudah $name lakukan hari ini===")
         }
     }
 
     fun jalan() {
         checkHealth()
-        println("$name sedang berjalan...")
-        health -= 1
+        println("$name sedang berjalan di taman bersama ayang")
+        health -= 4
+    }
+    fun lari() {
+        checkHealth()
+        println("$name sedang berlari di lapangan")
+        health -= -2
+    }
+
+    fun makan() {
+        checkHealth()
+        println("$name sedang makan chiken katsu")
+        health -= +2
+    }
+
+    fun minum() {
+        checkHealth()
+        println("$name sedang meminum boba")
+        health -= +2
+    }
+
+    fun lompat() {
+        checkHealth()
+        println("$name sedang lompat di trampolin")
+        health -= -2
+    }
+
+    fun duduk() {
+        checkHealth()
+        println("$name sedang duduk bersama ayang")
+        health -= +1
     }
 
 
